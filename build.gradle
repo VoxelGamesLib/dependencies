@@ -37,7 +37,7 @@ dependencies {
     compile group: 'org.hibernate', name: 'hibernate-core', version: '5.3.2.Final'
     compile group: 'com.dumptruckman.minecraft', name: 'JsonConfiguration', version: '1.1'
     compile group: 'org.inventivetalent', name: 'mc-wrappers', version: '1.0.3-SNAPSHOT'
-    compile group: 'io.github.lukehutch', name: 'fast-classpath-scanner', version: '3.1.10'
+    compile group: 'io.github.lukehutch', name: 'fast-classpath-scanner', version: '3.1.11'
     compile group: 'org.objenesis', name: 'objenesis', version: '2.6'
     compile group: 'com.comphenix.packetwrapper', name: 'PacketWrapper', version: '1.12.1-R0.1-SNAPSHOT'
 
