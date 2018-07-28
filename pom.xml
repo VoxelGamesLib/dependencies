@@ -89,7 +89,7 @@
         <dependency>
             <groupId>co.aikar</groupId>
             <artifactId>taskchain-bukkit</artifactId>
-            <version>3.6.0</version>
+            <version>3.7.1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
