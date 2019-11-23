@@ -14,47 +14,12 @@
     <artifactId>dependencies</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
-    <repositories>
-        <repository>
-            <id>paper</id>
-            <url>https://destroystokyo.com/repo/repository/maven-public/</url>
-        </repository>
-        <repository>
-            <id>aikar</id>
-            <url>https://repo.aikar.co/content/groups/aikar/</url>
-        </repository>
-        <repository>
-            <id>jskills</id>
-            <url>https://raw.githubusercontent.com/allanmc/JSkills/mvn-repo/</url>
-        </repository>
-        <repository>
-            <id>java-utilities</id><!-- ordered properties-->
-            <url>https://dl.bintray.com/etienne/java-utilities</url>
-        </repository>
-        <repository>
-            <id>bstats</id>
-            <url>https://repo.bstats.org/content/repositories/releases/</url>
-        </repository>
-        <repository>
-            <id>dmulloy2</id>
-            <url>http://repo.dmulloy2.net/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>inventivetalent</id>
-            <url>https://repo.inventivetalent.org/content/repositories/snapshots/</url>
-        </repository>
-        <repository>
-            <id>onarandombox</id><!-- json config -->
-            <url>http://repo.onarandombox.com/content/groups/public/</url>
-        </repository>
-    </repositories>
-
     <dependencies>
         <!-- compile -->
         <dependency>
             <groupId>com.destroystokyo.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.13.1-R0.1-SNAPSHOT</version>
+            <version>1.13.2-R0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
