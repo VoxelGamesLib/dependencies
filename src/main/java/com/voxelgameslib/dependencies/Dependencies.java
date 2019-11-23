@@ -42,7 +42,7 @@ public class Dependencies extends JavaPlugin {
 
                     dependencies.add(dependency);
                 } catch (IOException ex) {
-                    getLogger().warning("Error while reading file " + path);
+                    getLogger().finer("Error while reading file " + path);
                     ex.printStackTrace();
                     return;
                 }
@@ -55,18 +55,18 @@ public class Dependencies extends JavaPlugin {
                             .findFirst();
 
                     if (!dateLine.isPresent()) {
-                        getLogger().warning("Couldn't figure out compile date for dependency " + dependency);
+                        getLogger().finer("Couldn't figure out compile date for dependency " + dependency);
                         return;
                     }
                     SimpleDateFormat dateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.ENGLISH);
                     try {
                         dependency.setCompileTime(dateFormat.parse(dateLine.get().replace("#", "")));
                     } catch (ParseException e) {
-                        getLogger().warning("Error while parsing compile time date " +
+                        getLogger().finer("Error while parsing compile time date " +
                                 dateLine.get().replace("#", "") + ": " + e.getClass().getName() + ": " + e.getMessage());
                     }
                 } catch (IOException ex) {
-                    getLogger().warning("Error while reading compile date for dependency " + dependency);
+                    getLogger().finer("Error while reading compile date for dependency " + dependency);
                 }
 
             });
